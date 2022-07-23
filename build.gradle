@@ -18,12 +18,13 @@
 buildscript {
     repositories {
         mavenLocal()
-        jcenter()
+//        jcenter()
+        gradlePluginPortal()
         maven { url "https://plugins.gradle.org/m2/" }
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath 'com.android.tools.build:gradle:7.2.1'
         classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.8'
         classpath "com.hiya:jacoco-android:0.2"
     }
@@ -34,9 +35,11 @@ buildscript {
 allprojects {
     repositories {
         mavenLocal()
-        jcenter()
+//        jcenter()
+        gradlePluginPortal()
         maven { url "https://jitpack.io" }
-        maven { url "https://dl.bintray.com" }
+        maven { url 'https://maven.testfairy.com' }
+        //maven { url "https://dl.bintray.com" }
         maven { url "https://plugins.gradle.org/m2/" }
         google()
     }
