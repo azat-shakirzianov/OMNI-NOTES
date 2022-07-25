@@ -16,4 +16,11 @@ public class TextNoteTests extends OmniNoteBase {
         TextNoteScreen.enterTitle("Azat");
         TextNoteScreen.enterContent("pew pew pew");
     }
+
+    @Test
+    public void createTextNoteWithReminderTest() {
+        createTextNoteTest();
+        TextNoteScreen.tapAddReminder();
+        TextNoteScreen.tapOK();
+    }
 }

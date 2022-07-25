@@ -5,7 +5,6 @@ import androidx.test.rule.ActivityTestRule;
 import org.junit.Rule;
 import it.feio.android.omninotes.MainActivity;
 import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
@@ -22,7 +21,6 @@ public class OmniNoteBase {
 
     public static void tapOn(int resourceId) {
         onView(withId(resourceId)).perform(click());
-        onView(withContentDescription("drawer open"));
     }
 
     public static void tapOn(String text) {

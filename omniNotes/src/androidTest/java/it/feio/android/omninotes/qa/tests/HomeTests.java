@@ -10,11 +10,6 @@ import it.feio.android.omninotes.qa.utils.OmniNoteBase;
 public class HomeTests extends OmniNoteBase {
 
     @Test
-    public void testTest() {
-
-    }
-
-    @Test
     public void verifyFabButtonsTest() {
         HomeScreen.openFab();
         HomeScreen.verifyFabButtons();

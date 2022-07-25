@@ -15,4 +15,11 @@ public class ChecklistTests extends OmniNoteBase {
         HomeScreen.createNewChecklist();
         ChecklistScreen.enterTitle("Check it out");
     }
+
+    @Test
+    public void createChecklistWithReminderTest() {
+        createChecklistTest();
+        ChecklistScreen.tapAddReminder();
+        ChecklistScreen.tapOK();
+    }
 }
